@@ -7,12 +7,14 @@ import { AppComponent } from './app.component';
 import {routing, appRoutingProviders} from './app.routing';
 
 import {AlbumsListComponent} from './components/albums-list.component';
+import {AlbumAddComponent} from './components/album-add.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    AlbumsListComponent
+    AlbumsListComponent,
+    AlbumAddComponent
   ],
   imports: [
     BrowserModule,
