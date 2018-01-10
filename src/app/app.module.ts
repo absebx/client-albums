@@ -8,13 +8,15 @@ import {routing, appRoutingProviders} from './app.routing';
 
 import {AlbumsListComponent} from './components/albums-list.component';
 import {AlbumAddComponent} from './components/album-add.component';
+import {AlbumDetailComponent} from './components/album-detail.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     AlbumsListComponent,
-    AlbumAddComponent
+    AlbumAddComponent,
+    AlbumDetailComponent
   ],
   imports: [
     BrowserModule,
