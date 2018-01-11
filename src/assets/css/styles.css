@@ -82,6 +82,10 @@ header #logo{
   color: #444;
 }
 
+.main{
+  padding: 20px;
+}
+
 #albums-list{
   padding: 0px;
   margin: 0px;
@@ -91,10 +95,11 @@ header #logo{
   list-style: none;
   border: 1px solid #ddd;
   float:left;
-  width: 31%;
+  width: 95%;
   height: 120px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   color: gray;
   background: white;
   margin: 10px;
@@ -175,8 +180,10 @@ footer{
 
 .seguro{
   position: absolute;
-  margin-top: -95px;
+  margin-top: -41px;
   background: white;
-  width: 275px;
-  text-align: center;
+  width: 333px;
+  height: 45px;
+  text-align: left;
+  padding-top: 10px;
 }
