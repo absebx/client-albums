@@ -10,7 +10,7 @@
     </div>
     <p>
       <a [routerLink]="['/album', album._id]" class="btn btn-ver">Ver</a>
-      <a href="#" class="btn btn-default">Agregar fotos</a>
+      <a [routerLink]="['/add-image', album._id]" class="btn btn-default">Agregar fotos</a>
       <a [routerLink]="['/edit-album', album._id]" class="btn btn-editar">Editar</a>
       <a (click)="onDeleteConfirm(album._id)"  class="btn btn-eliminar">Eliminar</a>
     </p>

@@ -1,0 +1,17 @@
+<h1>{{name}}</h1>
+
+<form #formImage="ngForm" (ngSubmit)="onSubmit()">
+  <label>Título</label>
+  <p>
+    <input type="text" #title="ngModel" name="title" [(ngModel)]="image.title" required>
+    <span *ngIf="!title.valid && title.touched">Título no válido :(</span>
+  </p>
+
+  <div *ngIf="is_edit">
+    <label>Subir imagen</label>
+    <p>
+      <input type="file" placeholder="Subir la imagen" (change)="fileChangeEvent($event)">
+    </p>
+  </div>
+  <input type="submit" value="{{name}}" [disabled]="!formImage.form.valid">
+</form>
